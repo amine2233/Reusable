@@ -12,7 +12,7 @@ public protocol ReusableCell: Reusable {
     static var nib: UINib? { get }
 }
 
-public extension Reusable {
+public extension ReusableCell {
     static var nib: UINib? { return nil }
 }
 

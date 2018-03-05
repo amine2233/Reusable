@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "67351B2C204D690C00A42841"
-               BuildableName = "Reusable_watchOS.framework"
+               BuildableName = "Reusable.framework"
                BlueprintName = "Reusable watchOS"
                ReferencedContainer = "container:Reusable.xcodeproj">
             </BuildableReference>
@@ -48,7 +48,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "67351B2C204D690C00A42841"
-            BuildableName = "Reusable_watchOS.framework"
+            BuildableName = "Reusable.framework"
             BlueprintName = "Reusable watchOS"
             ReferencedContainer = "container:Reusable.xcodeproj">
          </BuildableReference>
@@ -66,7 +66,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "67351B2C204D690C00A42841"
-            BuildableName = "Reusable_watchOS.framework"
+            BuildableName = "Reusable.framework"
             BlueprintName = "Reusable watchOS"
             ReferencedContainer = "container:Reusable.xcodeproj">
          </BuildableReference>

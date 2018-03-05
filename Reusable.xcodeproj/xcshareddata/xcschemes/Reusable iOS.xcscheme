@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "67351B0F204D68D700A42841"
-               BuildableName = "Reusable_iOS.framework"
+               BuildableName = "Reusable.framework"
                BlueprintName = "Reusable iOS"
                ReferencedContainer = "container:Reusable.xcodeproj">
             </BuildableReference>
@@ -44,7 +44,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "67351B0F204D68D700A42841"
-            BuildableName = "Reusable_iOS.framework"
+            BuildableName = "Reusable.framework"
             BlueprintName = "Reusable iOS"
             ReferencedContainer = "container:Reusable.xcodeproj">
          </BuildableReference>
@@ -67,7 +67,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "67351B0F204D68D700A42841"
-            BuildableName = "Reusable_iOS.framework"
+            BuildableName = "Reusable.framework"
             BlueprintName = "Reusable iOS"
             ReferencedContainer = "container:Reusable.xcodeproj">
          </BuildableReference>
@@ -85,7 +85,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "67351B0F204D68D700A42841"
-            BuildableName = "Reusable_iOS.framework"
+            BuildableName = "Reusable.framework"
             BlueprintName = "Reusable iOS"
             ReferencedContainer = "container:Reusable.xcodeproj">
          </BuildableReference>
