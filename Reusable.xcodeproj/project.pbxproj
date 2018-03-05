@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6717E73B204D91240011B169 /* ReusableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6717E739204D91240011B169 /* ReusableController.swift */; };
+		6717E73C204D91240011B169 /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6717E73A204D91240011B169 /* ReusableCell.swift */; };
 		67351B1A204D68D700A42841 /* Reusable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67351B10204D68D700A42841 /* Reusable.framework */; };
 		67351B43204D691F00A42841 /* Reusable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67351B3A204D691F00A42841 /* Reusable.framework */; };
 		67351B5F204D692D00A42841 /* Reusable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67351B56204D692D00A42841 /* Reusable.framework */; };
@@ -14,9 +16,7 @@
 		67351B74204D6B4A00A42841 /* Reusable.h in Headers */ = {isa = PBXBuildFile; fileRef = 67351B72204D6B4700A42841 /* Reusable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		67351B75204D6B4B00A42841 /* Reusable.h in Headers */ = {isa = PBXBuildFile; fileRef = 67351B72204D6B4700A42841 /* Reusable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		67351B76204D6B4B00A42841 /* Reusable.h in Headers */ = {isa = PBXBuildFile; fileRef = 67351B72204D6B4700A42841 /* Reusable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		67351B7D204D6C3A00A42841 /* Info-iOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67351B79204D6C3A00A42841 /* Info-iOS.plist */; };
-		67351B7E204D6C3A00A42841 /* Info-tvOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67351B7A204D6C3A00A42841 /* Info-tvOS.plist */; };
-		67351B7F204D6C3A00A42841 /* Info-macOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67351B7B204D6C3A00A42841 /* Info-macOS.plist */; };
+		67351B7D204D6C3A00A42841 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 67351B79204D6C3A00A42841 /* Info.plist */; };
 		67351B80204D6C4100A42841 /* Reusable_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67351B78204D6C3A00A42841 /* Reusable_Tests.swift */; };
 		67351B81204D6C4200A42841 /* Reusable_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67351B78204D6C3A00A42841 /* Reusable_Tests.swift */; };
 		67351B82204D6C4300A42841 /* Reusable_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67351B78204D6C3A00A42841 /* Reusable_Tests.swift */; };
@@ -24,8 +24,6 @@
 		67351B85204D6EC500A42841 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67351B83204D6EC500A42841 /* Reusable.swift */; };
 		67351B86204D6EC500A42841 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67351B83204D6EC500A42841 /* Reusable.swift */; };
 		67351B87204D6EC600A42841 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67351B83204D6EC500A42841 /* Reusable.swift */; };
-		67351B8A204D6F6E00A42841 /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67351B89204D6F6E00A42841 /* ReusableCell.swift */; };
-		67351B8C204D6FF000A42841 /* ReusableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67351B8B204D6FF000A42841 /* ReusableController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6717E739204D91240011B169 /* ReusableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableController.swift; sourceTree = "<group>"; };
+		6717E73A204D91240011B169 /* ReusableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
 		67351B10204D68D700A42841 /* Reusable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reusable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67351B19204D68D700A42841 /* Reusable iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Reusable iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67351B2D204D690C00A42841 /* Reusable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reusable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,18 +60,11 @@
 		67351B42204D691F00A42841 /* Reusable tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Reusable tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67351B56204D692D00A42841 /* Reusable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reusable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67351B5E204D692D00A42841 /* Reusable macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Reusable macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		67351B6E204D6A0A00A42841 /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
-		67351B6F204D6A0A00A42841 /* Info-macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
-		67351B70204D6A0A00A42841 /* Info-watchOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-watchOS.plist"; sourceTree = "<group>"; };
-		67351B71204D6A0A00A42841 /* Info-tvOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
+		67351B6E204D6A0A00A42841 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67351B72204D6B4700A42841 /* Reusable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reusable.h; sourceTree = "<group>"; };
 		67351B78204D6C3A00A42841 /* Reusable_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable_Tests.swift; sourceTree = "<group>"; };
-		67351B79204D6C3A00A42841 /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
-		67351B7A204D6C3A00A42841 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
-		67351B7B204D6C3A00A42841 /* Info-macOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
+		67351B79204D6C3A00A42841 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67351B83204D6EC500A42841 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
-		67351B89204D6F6E00A42841 /* ReusableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ReusableCell.swift; sourceTree = "<group>"; usesTabs = 1; };
-		67351B8B204D6FF000A42841 /* ReusableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ReusableController.swift; sourceTree = "<group>"; usesTabs = 1; };
 		67351B8D204D71E300A42841 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		67351B96204D825600A42841 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -132,6 +125,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6717E738204D91240011B169 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6717E739204D91240011B169 /* ReusableController.swift */,
+				6717E73A204D91240011B169 /* ReusableCell.swift */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
 		67351B04204D68C100A42841 = {
 			isa = PBXGroup;
 			children = (
@@ -161,12 +163,9 @@
 			isa = PBXGroup;
 			children = (
 				67351B72204D6B4700A42841 /* Reusable.h */,
-				67351B6E204D6A0A00A42841 /* Info-iOS.plist */,
-				67351B6F204D6A0A00A42841 /* Info-macOS.plist */,
-				67351B71204D6A0A00A42841 /* Info-tvOS.plist */,
-				67351B70204D6A0A00A42841 /* Info-watchOS.plist */,
+				67351B6E204D6A0A00A42841 /* Info.plist */,
 				67351B83204D6EC500A42841 /* Reusable.swift */,
-				67351B88204D6F4A00A42841 /* iOS */,
+				6717E738204D91240011B169 /* iOS */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -175,20 +174,9 @@
 			isa = PBXGroup;
 			children = (
 				67351B78204D6C3A00A42841 /* Reusable_Tests.swift */,
-				67351B79204D6C3A00A42841 /* Info-iOS.plist */,
-				67351B7A204D6C3A00A42841 /* Info-tvOS.plist */,
-				67351B7B204D6C3A00A42841 /* Info-macOS.plist */,
+				67351B79204D6C3A00A42841 /* Info.plist */,
 			);
 			path = Tests;
-			sourceTree = "<group>";
-		};
-		67351B88204D6F4A00A42841 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				67351B89204D6F6E00A42841 /* ReusableCell.swift */,
-				67351B8B204D6FF000A42841 /* ReusableController.swift */,
-			);
-			path = iOS;
 			sourceTree = "<group>";
 		};
 		67351B95204D825600A42841 /* Frameworks */ = {
@@ -434,9 +422,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67351B7F204D6C3A00A42841 /* Info-macOS.plist in Resources */,
-				67351B7E204D6C3A00A42841 /* Info-tvOS.plist in Resources */,
-				67351B7D204D6C3A00A42841 /* Info-iOS.plist in Resources */,
+				67351B7D204D6C3A00A42841 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,9 +475,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67351B8C204D6FF000A42841 /* ReusableController.swift in Sources */,
-				67351B8A204D6F6E00A42841 /* ReusableCell.swift in Sources */,
+				6717E73B204D91240011B169 /* ReusableController.swift in Sources */,
 				67351B84204D6EC500A42841 /* Reusable.swift in Sources */,
+				6717E73C204D91240011B169 /* ReusableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +568,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -633,7 +620,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Sources/Info-iOS.plist";
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -656,6 +643,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -701,7 +689,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Sources/Info-iOS.plist";
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -769,7 +757,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Tests/Info-iOS.plist";
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -828,7 +816,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Tests/Info-iOS.plist";
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -898,7 +886,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Sources/Info-watchOS.plist";
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -967,7 +955,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Sources/Info-watchOS.plist";
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -989,6 +977,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1040,7 +1029,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Sources/Info-tvOS.plist";
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -1063,6 +1052,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1108,7 +1098,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Sources/Info-tvOS.plist";
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -1175,7 +1165,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Tests/Info-tvOS.plist";
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1233,7 +1223,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Tests/Info-tvOS.plist";
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sup.$(PROJECT_NAME)Tests";
@@ -1251,6 +1241,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1304,7 +1295,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Sources/Info-macOS.plist";
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
@@ -1326,6 +1317,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1373,7 +1365,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Sources/Info-macOS.plist";
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
@@ -1440,7 +1432,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Tests/Info-macOS.plist";
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -1499,7 +1491,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "Tests/Info-macOS.plist";
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;

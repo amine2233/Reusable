@@ -1,0 +1,45 @@
+BCSymbolMap Version: 2.0
+_swift_rt_swift_getInitializedObjCClass
+_swift_rt_swift_dynamicCast
+__T0So16UIViewControllerCML
+__T08Reusable0A10Controller_pMF
+__swift_FORCE_LOAD_$_swiftFoundation_$_Reusable
+__swift_FORCE_LOAD_$_swiftObjectiveC_$_Reusable
+__swift_FORCE_LOAD_$_swiftDarwin_$_Reusable
+__swift_FORCE_LOAD_$_swiftCoreFoundation_$_Reusable
+__swift_FORCE_LOAD_$_swiftDispatch_$_Reusable
+__swift_FORCE_LOAD_$_swiftUIKit_$_Reusable
+__swift_FORCE_LOAD_$_swiftCoreGraphics_$_Reusable
+__swift_FORCE_LOAD_$_swiftCoreImage_$_Reusable
+__swift_FORCE_LOAD_$_swiftMetal_$_Reusable
+__swift_FORCE_LOAD_$_swiftQuartzCore_$_Reusable
+___swift_reflection_version
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+-emit-bc /Users/amine/Projects/tools/test/Reusable/Sources/iOS/ReusableController.swift /Users/amine/Projects/tools/test/Reusable/Sources/Reusable.swift /Users/amine/Projects/tools/test/Reusable/Sources/iOS/ReusableCell.swift -target arm64-apple-ios11.2 -Xllvm -aarch64-use-tbi -enable-objc-interop -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk -I "/Users/amine/Library/Developer/Xcode/DerivedData/Reusable-befewscoozvhmsesyhbhqualmxxb/Build/Intermediates.noindex/ArchiveIntermediates/Reusable iOS/BuildProductsPath/Release-iphoneos" -F "/Users/amine/Library/Developer/Xcode/DerivedData/Reusable-befewscoozvhmsesyhbhqualmxxb/Build/Intermediates.noindex/ArchiveIntermediates/Reusable iOS/BuildProductsPath/Release-iphoneos" -application-extension -g -import-underlying-module -module-cache-path /Users/amine/Library/Developer/Xcode/DerivedData/ModuleCache -swift-version 4 -serialize-debugging-options -report-errors-to-debugger -Xcc "-I/Users/amine/Library/Developer/Xcode/DerivedData/Reusable-befewscoozvhmsesyhbhqualmxxb/Build/Intermediates.noindex/ArchiveIntermediates/Reusable iOS/IntermediateBuildFilesPath/Reusable.build/Release-iphoneos/Reusable iOS.build/swift-overrides.hmap" -Xcc -iquote -Xcc "/Users/amine/Library/Developer/Xcode/DerivedData/Reusable-befewscoozvhmsesyhbhqualmxxb/Build/Intermediates.noindex/ArchiveIntermediates/Reusable iOS/IntermediateBuildFilesPath/Reusable.build/Release-iphoneos/Reusable iOS.build/Reusable-generated-files.hmap" -Xcc "-I/Users/amine/Library/Developer/Xcode/DerivedData/Reusable-befewscoozvhmsesyhbhqualmxxb/Build/Intermediates.noindex/ArchiveIntermediates/Reusable iOS/IntermediateBuildFilesPath/Reusable.build/Release-iphoneos/Reusable iOS.build/Reusable-own-target-headers.hmap" -Xcc "-I/Users/amine/Library/Developer/Xcode/DerivedData/Reusable-befewscoozvhmsesyhbhqualmxxb/Build/Intermediates.noindex/ArchiveIntermediates/Reusable iOS/IntermediateBuildFilesPath/Reusable.build/Release-iphoneos/Reusable iOS.build/Reusable-all-non-framework-target-headers.hmap" -Xcc -ivfsoverlay -Xcc "/Users/amine/Library/Developer/Xcode/DerivedData/Reusable-befewscoozvhmsesyhbhqualmxxb/Build/Intermediates.noindex/ArchiveIntermediates/Reusable iOS/IntermediateBuildFilesPath/Reusable.build/all-product-headers.yaml" -Xcc -iquote -Xcc "/Users/amine/Library/Developer/Xcode/DerivedData/Reusable-befewscoozvhmsesyhbhqualmxxb/Build/Intermediates.noindex/ArchiveIntermediates/Reusable iOS/IntermediateBuildFilesPath/Reusable.build/Release-iphoneos/Reusable iOS.build/Reusable-project-headers.hmap" -Xcc "-I/Users/amine/Library/Developer/Xcode/DerivedData/Reusable-befewscoozvhmsesyhbhqualmxxb/Build/Intermediates.noindex/ArchiveIntermediates/Reusable iOS/BuildProductsPath/Release-iphoneos/include" -Xcc "-I/Users/amine/Library/Developer/Xcode/DerivedData/Reusable-befewscoozvhmsesyhbhqualmxxb/Build/Intermediates.noindex/ArchiveIntermediates/Reusable iOS/IntermediateBuildFilesPath/Reusable.build/Release-iphoneos/Reusable iOS.build/DerivedSources/arm64" -Xcc "-I/Users/amine/Library/Developer/Xcode/DerivedData/Reusable-befewscoozvhmsesyhbhqualmxxb/Build/Intermediates.noindex/ArchiveIntermediates/Reusable iOS/IntermediateBuildFilesPath/Reusable.build/Release-iphoneos/Reusable iOS.build/DerivedSources" -Xcc -ivfsoverlay -Xcc "/Users/amine/Library/Developer/Xcode/DerivedData/Reusable-befewscoozvhmsesyhbhqualmxxb/Build/Intermediates.noindex/ArchiveIntermediates/Reusable iOS/IntermediateBuildFilesPath/Reusable.build/Release-iphoneos/Reusable iOS.build/unextended-module-overlay.yaml" -Xcc -working-directory/Users/amine/Projects/tools/test/Reusable -emit-module-doc-path "/Users/amine/Library/Developer/Xcode/DerivedData/Reusable-befewscoozvhmsesyhbhqualmxxb/Build/Intermediates.noindex/ArchiveIntermediates/Reusable iOS/IntermediateBuildFilesPath/Reusable.build/Release-iphoneos/Reusable iOS.build/Objects-normal/arm64/Reusable.swiftdoc" -serialize-diagnostics-path "/Users/amine/Library/Developer/Xcode/DerivedData/Reusable-befewscoozvhmsesyhbhqualmxxb/Build/Intermediates.noindex/ArchiveIntermediates/Reusable iOS/IntermediateBuildFilesPath/Reusable.build/Release-iphoneos/Reusable iOS.build/Objects-normal/arm64/ReusableController.dia" -O -module-name Reusable -emit-module-path "/Users/amine/Library/Developer/Xcode/DerivedData/Reusable-befewscoozvhmsesyhbhqualmxxb/Build/Intermediates.noindex/ArchiveIntermediates/Reusable iOS/IntermediateBuildFilesPath/Reusable.build/Release-iphoneos/Reusable iOS.build/Objects-normal/arm64/Reusable.swiftmodule" -emit-objc-header-path "/Users/amine/Library/Developer/Xcode/DerivedData/Reusable-befewscoozvhmsesyhbhqualmxxb/Build/Intermediates.noindex/ArchiveIntermediates/Reusable iOS/IntermediateBuildFilesPath/Reusable.build/Release-iphoneos/Reusable iOS.build/Objects-normal/arm64/Reusable-Swift.h" -emit-dependencies-path "/Users/amine/Library/Developer/Xcode/DerivedData/Reusable-befewscoozvhmsesyhbhqualmxxb/Build/Intermediates.noindex/ArchiveIntermediates/Reusable iOS/IntermediateBuildFilesPath/Reusable.build/Release-iphoneos/Reusable iOS.build/Objects-normal/arm64/ReusableController.d" -num-threads 4 -o "/Users/amine/Library/Developer/Xcode/DerivedData/Reusable-befewscoozvhmsesyhbhqualmxxb/Build/Intermediates.noindex/ArchiveIntermediates/Reusable iOS/IntermediateBuildFilesPath/Reusable.build/Release-iphoneos/Reusable iOS.build/Objects-normal/arm64/ReusableController.bc" -o "/Users/amine/Library/Developer/Xcode/DerivedData/Reusable-befewscoozvhmsesyhbhqualmxxb/Build/Intermediates.noindex/ArchiveIntermediates/Reusable iOS/IntermediateBuildFilesPath/Reusable.build/Release-iphoneos/Reusable iOS.build/Objects-normal/arm64/Reusable.bc" -o "/Users/amine/Library/Developer/Xcode/DerivedData/Reusable-befewscoozvhmsesyhbhqualmxxb/Build/Intermediates.noindex/ArchiveIntermediates/Reusable iOS/IntermediateBuildFilesPath/Reusable.build/Release-iphoneos/Reusable iOS.build/Objects-normal/arm64/ReusableCell.bc" -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift
+<swift-imported-modules>
+/Users/amine/Projects/tools/test/Reusable
+Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)
+/Users/amine/Projects/tools/test/Reusable/Sources/iOS/ReusableController.swift
+create
+ReusableController.swift
+/Users/amine/Projects/tools/test/Reusable/Sources/iOS
+_T0So16UIViewControllerCMa
+init
+_T0So16UIViewControllerC8ReusableE6createxxm_So6BundleCSg6bundletAC0cB0RzlFZfA0_
+__T08ReusableAA_pMF
+/Users/amine/Projects/tools/test/Reusable/Sources/Reusable.swift
+reuseIdentifier.get
+Reusable.swift
+/Users/amine/Projects/tools/test/Reusable/Sources
+__T0So11UITableViewC8ReusableE08registerC4CellyxmSo0abE0CRbzAC0cE0RzlFTm
+__T0So11UITableViewC8ReusableE07dequeueC4Cellx10Foundation9IndexPathV3for_tSo0abE0CRbzAC0cE0RzlFTm
+__T08Reusable0A4Cell_pMF
+/Users/amine/Projects/tools/test/Reusable/Sources/iOS/ReusableCell.swift
+dequeueReusableSupplementaryView
+ReusableCell.swift
+registerReusableSupplementaryView
+dequeueReusableCell
+registerReusableCell
+dequeueReusableHeaderFooterView
+nib.get
+/Users/amine/Library/Developer/Xcode/DerivedData/Reusable-befewscoozvhmsesyhbhqualmxxb/Build/Intermediates.noindex/ArchiveIntermediates/Reusable iOS/IntermediateBuildFilesPath/Reusable.build/Release-iphoneos/Reusable iOS.build/DerivedSources/Reusable_vers.c
