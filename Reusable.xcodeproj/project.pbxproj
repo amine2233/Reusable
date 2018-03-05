@@ -24,6 +24,16 @@
 		67351B85204D6EC500A42841 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67351B83204D6EC500A42841 /* Reusable.swift */; };
 		67351B86204D6EC500A42841 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67351B83204D6EC500A42841 /* Reusable.swift */; };
 		67351B87204D6EC600A42841 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67351B83204D6EC500A42841 /* Reusable.swift */; };
+		6738680E204DD72000BF8D0E /* ReusableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6717E739204D91240011B169 /* ReusableController.swift */; };
+		6738680F204DD72700BF8D0E /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6717E73A204D91240011B169 /* ReusableCell.swift */; };
+		67386811204DD89A00BF8D0E /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67386810204DD89A00BF8D0E /* ReusableCell.swift */; };
+		67386813204DE1D500BF8D0E /* Updatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67386812204DE1D500BF8D0E /* Updatable.swift */; };
+		67386814204DE1D500BF8D0E /* Updatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67386812204DE1D500BF8D0E /* Updatable.swift */; };
+		67386815204DE1D500BF8D0E /* Updatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67386812204DE1D500BF8D0E /* Updatable.swift */; };
+		67386816204DE1D500BF8D0E /* Updatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67386812204DE1D500BF8D0E /* Updatable.swift */; };
+		67386818204DE2E500BF8D0E /* UpdatableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67386817204DE2E500BF8D0E /* UpdatableTests.swift */; };
+		67386819204DE2E500BF8D0E /* UpdatableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67386817204DE2E500BF8D0E /* UpdatableTests.swift */; };
+		6738681A204DE2E500BF8D0E /* UpdatableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67386817204DE2E500BF8D0E /* UpdatableTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +77,9 @@
 		67351B83204D6EC500A42841 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		67351B8D204D71E300A42841 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		67351B96204D825600A42841 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		67386810204DD89A00BF8D0E /* ReusableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
+		67386812204DE1D500BF8D0E /* Updatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Updatable.swift; sourceTree = "<group>"; };
+		67386817204DE2E500BF8D0E /* UpdatableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatableTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,13 +138,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6717E738204D91240011B169 /* iOS */ = {
+		6717E738204D91240011B169 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
 				6717E739204D91240011B169 /* ReusableController.swift */,
 				6717E73A204D91240011B169 /* ReusableCell.swift */,
 			);
-			path = iOS;
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 		67351B04204D68C100A42841 = {
@@ -165,7 +178,9 @@
 				67351B72204D6B4700A42841 /* Reusable.h */,
 				67351B6E204D6A0A00A42841 /* Info.plist */,
 				67351B83204D6EC500A42841 /* Reusable.swift */,
-				6717E738204D91240011B169 /* iOS */,
+				67386812204DE1D500BF8D0E /* Updatable.swift */,
+				6738680D204DD71B00BF8D0E /* AppKit */,
+				6717E738204D91240011B169 /* UIKit */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -175,6 +190,7 @@
 			children = (
 				67351B78204D6C3A00A42841 /* Reusable_Tests.swift */,
 				67351B79204D6C3A00A42841 /* Info.plist */,
+				67386817204DE2E500BF8D0E /* UpdatableTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -185,6 +201,14 @@
 				67351B96204D825600A42841 /* UIKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6738680D204DD71B00BF8D0E /* AppKit */ = {
+			isa = PBXGroup;
+			children = (
+				67386810204DD89A00BF8D0E /* ReusableCell.swift */,
+			);
+			path = AppKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -475,6 +499,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67386813204DE1D500BF8D0E /* Updatable.swift in Sources */,
 				6717E73B204D91240011B169 /* ReusableController.swift in Sources */,
 				67351B84204D6EC500A42841 /* Reusable.swift in Sources */,
 				6717E73C204D91240011B169 /* ReusableCell.swift in Sources */,
@@ -485,6 +510,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67386818204DE2E500BF8D0E /* UpdatableTests.swift in Sources */,
 				67351B80204D6C4100A42841 /* Reusable_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -493,6 +519,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67386814204DE1D500BF8D0E /* Updatable.swift in Sources */,
 				67351B85204D6EC500A42841 /* Reusable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -501,7 +528,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67386815204DE1D500BF8D0E /* Updatable.swift in Sources */,
+				6738680E204DD72000BF8D0E /* ReusableController.swift in Sources */,
 				67351B86204D6EC500A42841 /* Reusable.swift in Sources */,
+				6738680F204DD72700BF8D0E /* ReusableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +539,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67386819204DE2E500BF8D0E /* UpdatableTests.swift in Sources */,
 				67351B81204D6C4200A42841 /* Reusable_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,6 +548,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67386816204DE1D500BF8D0E /* Updatable.swift in Sources */,
+				67386811204DD89A00BF8D0E /* ReusableCell.swift in Sources */,
 				67351B87204D6EC600A42841 /* Reusable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -525,6 +558,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6738681A204DE2E500BF8D0E /* UpdatableTests.swift in Sources */,
 				67351B82204D6C4300A42841 /* Reusable_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
