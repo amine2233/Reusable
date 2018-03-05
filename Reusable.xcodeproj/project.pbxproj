@@ -20,6 +20,12 @@
 		67351B80204D6C4100A42841 /* Reusable_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67351B78204D6C3A00A42841 /* Reusable_Tests.swift */; };
 		67351B81204D6C4200A42841 /* Reusable_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67351B78204D6C3A00A42841 /* Reusable_Tests.swift */; };
 		67351B82204D6C4300A42841 /* Reusable_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67351B78204D6C3A00A42841 /* Reusable_Tests.swift */; };
+		67351B84204D6EC500A42841 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67351B83204D6EC500A42841 /* Reusable.swift */; };
+		67351B85204D6EC500A42841 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67351B83204D6EC500A42841 /* Reusable.swift */; };
+		67351B86204D6EC500A42841 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67351B83204D6EC500A42841 /* Reusable.swift */; };
+		67351B87204D6EC600A42841 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67351B83204D6EC500A42841 /* Reusable.swift */; };
+		67351B8A204D6F6E00A42841 /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67351B89204D6F6E00A42841 /* ReusableCell.swift */; };
+		67351B8C204D6FF000A42841 /* ReusableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67351B8B204D6FF000A42841 /* ReusableController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +69,10 @@
 		67351B79204D6C3A00A42841 /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
 		67351B7A204D6C3A00A42841 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
 		67351B7B204D6C3A00A42841 /* Info-macOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
+		67351B83204D6EC500A42841 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		67351B89204D6F6E00A42841 /* ReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
+		67351B8B204D6FF000A42841 /* ReusableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableController.swift; sourceTree = "<group>"; };
+		67351B8D204D71E300A42841 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +134,7 @@
 		67351B04204D68C100A42841 = {
 			isa = PBXGroup;
 			children = (
+				67351B8D204D71E300A42841 /* Package.swift */,
 				67351B6D204D695700A42841 /* Sources */,
 				67351B77204D6C3A00A42841 /* Tests */,
 				67351B11204D68D700A42841 /* Products */,
@@ -152,6 +163,8 @@
 				67351B6F204D6A0A00A42841 /* Info-macOS.plist */,
 				67351B71204D6A0A00A42841 /* Info-tvOS.plist */,
 				67351B70204D6A0A00A42841 /* Info-watchOS.plist */,
+				67351B83204D6EC500A42841 /* Reusable.swift */,
+				67351B88204D6F4A00A42841 /* iOS */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -165,6 +178,15 @@
 				67351B7B204D6C3A00A42841 /* Info-macOS.plist */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		67351B88204D6F4A00A42841 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				67351B89204D6F6E00A42841 /* ReusableCell.swift */,
+				67351B8B204D6FF000A42841 /* ReusableController.swift */,
+			);
+			path = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,6 +364,7 @@
 				TargetAttributes = {
 					67351B0F204D68D700A42841 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					67351B18204D68D700A42841 = {
@@ -350,10 +373,12 @@
 					};
 					67351B2C204D690C00A42841 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					67351B39204D691F00A42841 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					67351B41204D691F00A42841 = {
@@ -362,6 +387,7 @@
 					};
 					67351B55204D692D00A42841 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					67351B5D204D692D00A42841 = {
@@ -453,6 +479,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67351B8C204D6FF000A42841 /* ReusableController.swift in Sources */,
+				67351B8A204D6F6E00A42841 /* ReusableCell.swift in Sources */,
+				67351B84204D6EC500A42841 /* Reusable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +497,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67351B85204D6EC500A42841 /* Reusable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +505,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67351B86204D6EC500A42841 /* Reusable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +521,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67351B87204D6EC600A42841 /* Reusable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -676,6 +708,7 @@
 		67351B26204D68D700A42841 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -740,6 +773,7 @@
 		67351B27204D68D700A42841 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -1073,6 +1107,7 @@
 		67351B4F204D691F00A42841 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -1136,6 +1171,7 @@
 		67351B50204D691F00A42841 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -1330,6 +1366,7 @@
 		67351B6B204D692D00A42841 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -1394,6 +1431,7 @@
 		67351B6C204D692D00A42841 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
