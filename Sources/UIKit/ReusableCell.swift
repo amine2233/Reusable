@@ -25,8 +25,8 @@ public extension UITableView {
         }
     }
     
-    public func dequeueReusableCell<T: UITableViewCell>(for indexPath: IndexPath) -> T where T: ReusableCell {
-        return self.dequeueReusableCell(withIdentifier: T.reuseIdentifier, for: indexPath) as! T
+    public func dequeueReusableCell<T: UITableViewCell>(for indexPath: IndexPath) -> T? where T: ReusableCell {
+        return self.dequeueReusableCell(withIdentifier: T.reuseIdentifier, for: indexPath) as? T
     }
     
     public func registerReusableHeaderFooterView<T: UITableViewHeaderFooterView>(_: T.Type) where T: ReusableCell {
@@ -38,7 +38,7 @@ public extension UITableView {
     }
     
     public func dequeueReusableHeaderFooterView<T: UITableViewHeaderFooterView>() -> T? where T: ReusableCell {
-        return self.dequeueReusableHeaderFooterView(withIdentifier: T.reuseIdentifier) as! T?
+        return self.dequeueReusableHeaderFooterView(withIdentifier: T.reuseIdentifier) as? T
     }
 }
 
@@ -51,8 +51,8 @@ public extension UICollectionView {
         }
     }
     
-    public func dequeueReusableCell<T: UICollectionViewCell>(at indexPath: IndexPath) -> T where T: ReusableCell {
-        return self.dequeueReusableCell(withReuseIdentifier: T.reuseIdentifier, for: indexPath) as! T
+    public func dequeueReusableCell<T: UICollectionViewCell>(for indexPath: IndexPath) -> T? where T: ReusableCell {
+        return self.dequeueReusableCell(withReuseIdentifier: T.reuseIdentifier, for: indexPath) as? T
     }
     
     public func registerReusableSupplementaryView<T: UICollectionReusableView>(elementKind: String, _: T.Type) where T: ReusableCell {
@@ -63,7 +63,7 @@ public extension UICollectionView {
         }
     }
     
-    public func dequeueReusableSupplementaryView<T: UICollectionViewCell>(elementKind: String, indexPath: IndexPath) -> T where T: ReusableCell {
-        return self.dequeueReusableSupplementaryView(ofKind: elementKind, withReuseIdentifier: T.reuseIdentifier, for: indexPath) as! T
+    public func dequeueReusableSupplementaryView<T: UICollectionViewCell>(elementKind: String, indexPath: IndexPath) -> T? where T: ReusableCell {
+        return self.dequeueReusableSupplementaryView(ofKind: elementKind, withReuseIdentifier: T.reuseIdentifier, for: indexPath) as? T
     }
 }

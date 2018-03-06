@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6711B5DC204EC5650009CA8C /* ReusableStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6711B5DB204EC5650009CA8C /* ReusableStoryboard.swift */; };
+		6711B5DD204EC5720009CA8C /* ReusableStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6711B5DB204EC5650009CA8C /* ReusableStoryboard.swift */; };
+		6711B5DF204EC6B30009CA8C /* ReusableStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6711B5DE204EC6B30009CA8C /* ReusableStoryboard.swift */; };
 		6717E73B204D91240011B169 /* ReusableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6717E739204D91240011B169 /* ReusableController.swift */; };
 		6717E73C204D91240011B169 /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6717E73A204D91240011B169 /* ReusableCell.swift */; };
 		67351B1A204D68D700A42841 /* Reusable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67351B10204D68D700A42841 /* Reusable.framework */; };
@@ -61,6 +64,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6711B5DB204EC5650009CA8C /* ReusableStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableStoryboard.swift; sourceTree = "<group>"; };
+		6711B5DE204EC6B30009CA8C /* ReusableStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableStoryboard.swift; sourceTree = "<group>"; };
 		6717E739204D91240011B169 /* ReusableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableController.swift; sourceTree = "<group>"; };
 		6717E73A204D91240011B169 /* ReusableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
 		67351B10204D68D700A42841 /* Reusable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reusable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +148,7 @@
 			children = (
 				6717E739204D91240011B169 /* ReusableController.swift */,
 				6717E73A204D91240011B169 /* ReusableCell.swift */,
+				6711B5DB204EC5650009CA8C /* ReusableStoryboard.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -207,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				67386810204DD89A00BF8D0E /* ReusableCell.swift */,
+				6711B5DE204EC6B30009CA8C /* ReusableStoryboard.swift */,
 			);
 			path = AppKit;
 			sourceTree = "<group>";
@@ -502,6 +509,7 @@
 				67386813204DE1D500BF8D0E /* Updatable.swift in Sources */,
 				6717E73B204D91240011B169 /* ReusableController.swift in Sources */,
 				67351B84204D6EC500A42841 /* Reusable.swift in Sources */,
+				6711B5DC204EC5650009CA8C /* ReusableStoryboard.swift in Sources */,
 				6717E73C204D91240011B169 /* ReusableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -531,6 +539,7 @@
 				67386815204DE1D500BF8D0E /* Updatable.swift in Sources */,
 				6738680E204DD72000BF8D0E /* ReusableController.swift in Sources */,
 				67351B86204D6EC500A42841 /* Reusable.swift in Sources */,
+				6711B5DD204EC5720009CA8C /* ReusableStoryboard.swift in Sources */,
 				6738680F204DD72700BF8D0E /* ReusableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -551,6 +560,7 @@
 				67386816204DE1D500BF8D0E /* Updatable.swift in Sources */,
 				67386811204DD89A00BF8D0E /* ReusableCell.swift in Sources */,
 				67351B87204D6EC600A42841 /* Reusable.swift in Sources */,
+				6711B5DF204EC6B30009CA8C /* ReusableStoryboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

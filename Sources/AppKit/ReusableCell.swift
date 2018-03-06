@@ -30,7 +30,7 @@ public extension NSCollectionView {
         }
     }
 
-    public func makeItemWithIdentifierReusableCell<T: NSCollectionViewItem>(_: T.Type, indexPath: IndexPath) -> T where T: ReusableCell {
-        return self.makeItem(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: T.reuseIdentifier), for: indexPath) as! T
+    public func makeItemWithIdentifierReusableCell<T: NSCollectionViewItem>(_: T.Type, indexPath: IndexPath) -> T? where T: ReusableCell {
+        return self.makeItem(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: T.reuseIdentifier), for: indexPath) as? T
     }
 }
