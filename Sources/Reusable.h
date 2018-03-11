@@ -1,10 +1,3 @@
-//
-//  Reusable.h
-//  Reusable
-//
-//  Created by Amine Bensalah on 05/03/2018.
-//
-
 #import <Foundation/Foundation.h>
 
 //! Project version number for Reusable.

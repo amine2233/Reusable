@@ -1,10 +1,3 @@
-//
-//  Updatable.swift
-//  Reusable
-//
-//  Created by Amine Bensalah on 05/03/2018.
-//
-
 import Foundation
 
 public protocol UpdatableProtocol {
@@ -17,12 +10,12 @@ public protocol UpdatableProtocol {
 }
 
 public protocol Updatable: UpdatableProtocol {
-    func update(viewModel vm: ViewModel?, at indexPath: Index?)
+    func update(with viewModel: ViewModel?, at indexPath: Index?)
 }
 
-public protocol UpdatableAction: UpdatableProtocol {
+public protocol UpdatableDelegate: UpdatableProtocol {
     associatedtype Delegate
     var delegate: Delegate? { get }
 
-    func update(viewModel vm: ViewModel?, at indexPath: Index?, delegate: Delegate?)
+    func update(with viewModel: ViewModel?, at indexPath: Index?, delegate: Delegate?)
 }

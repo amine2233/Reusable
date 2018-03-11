@@ -1,10 +1,3 @@
-//
-//  Reusable_iOSTests.swift
-//  Reusable iOSTests
-//
-//  Created by Amine Bensalah on 05/03/2018.
-//
-
 import XCTest
 @testable import Reusable
 

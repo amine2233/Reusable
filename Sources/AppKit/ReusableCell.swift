@@ -1,11 +1,3 @@
-//
-//  Reusable.swift
-//  Instapaperable
-//
-//  Created by Amine Bensalah on 24/07/2017.
-//  Copyright © 2017 Amine Bensalah. All rights reserved.
-//
-
 import Foundation
 import Cocoa
 

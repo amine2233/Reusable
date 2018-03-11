@@ -1,10 +1,3 @@
-//
-//  ReusableStoryboard.swift
-//  Reusable macOS
-//
-//  Created by Amine Bensalah on 06/03/2018.
-//
-
 import AppKit
 
 /*
