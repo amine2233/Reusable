@@ -37,6 +37,9 @@
 		67386818204DE2E500BF8D0E /* UpdatableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67386817204DE2E500BF8D0E /* UpdatableTests.swift */; };
 		67386819204DE2E500BF8D0E /* UpdatableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67386817204DE2E500BF8D0E /* UpdatableTests.swift */; };
 		6738681A204DE2E500BF8D0E /* UpdatableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67386817204DE2E500BF8D0E /* UpdatableTests.swift */; };
+		675E5A132088ED9700F7C35B /* UIAppearanceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675E5A122088ED9700F7C35B /* UIAppearanceExtension.swift */; };
+		675E5A162088EDD700F7C35B /* NSAppearanceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675E5A142088EDC800F7C35B /* NSAppearanceExtension.swift */; };
+		675E5A182088EDDD00F7C35B /* UIAppearanceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675E5A122088ED9700F7C35B /* UIAppearanceExtension.swift */; };
 		67E2867F205555CE002B9160 /* ReusableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E2867E205555CE002B9160 /* ReusableController.swift */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +89,8 @@
 		67386810204DD89A00BF8D0E /* ReusableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
 		67386812204DE1D500BF8D0E /* Updatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Updatable.swift; sourceTree = "<group>"; };
 		67386817204DE2E500BF8D0E /* UpdatableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatableTests.swift; sourceTree = "<group>"; };
+		675E5A122088ED9700F7C35B /* UIAppearanceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAppearanceExtension.swift; sourceTree = "<group>"; };
+		675E5A142088EDC800F7C35B /* NSAppearanceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAppearanceExtension.swift; sourceTree = "<group>"; };
 		67E2867E205555CE002B9160 /* ReusableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,6 +156,7 @@
 				6717E739204D91240011B169 /* ReusableController.swift */,
 				6717E73A204D91240011B169 /* ReusableCell.swift */,
 				6711B5DB204EC5650009CA8C /* ReusableStoryboard.swift */,
+				675E5A122088ED9700F7C35B /* UIAppearanceExtension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -217,6 +223,7 @@
 				67386810204DD89A00BF8D0E /* ReusableCell.swift */,
 				6711B5DE204EC6B30009CA8C /* ReusableStoryboard.swift */,
 				67E2867E205555CE002B9160 /* ReusableController.swift */,
+				675E5A142088EDC800F7C35B /* NSAppearanceExtension.swift */,
 			);
 			path = AppKit;
 			sourceTree = "<group>";
@@ -514,6 +521,7 @@
 				67351B84204D6EC500A42841 /* Reusable.swift in Sources */,
 				6711B5DC204EC5650009CA8C /* ReusableStoryboard.swift in Sources */,
 				6717E73C204D91240011B169 /* ReusableCell.swift in Sources */,
+				675E5A132088ED9700F7C35B /* UIAppearanceExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,6 +552,7 @@
 				67351B86204D6EC500A42841 /* Reusable.swift in Sources */,
 				6711B5DD204EC5720009CA8C /* ReusableStoryboard.swift in Sources */,
 				6738680F204DD72700BF8D0E /* ReusableCell.swift in Sources */,
+				675E5A182088EDDD00F7C35B /* UIAppearanceExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,6 +571,7 @@
 			files = (
 				67386816204DE1D500BF8D0E /* Updatable.swift in Sources */,
 				67386811204DD89A00BF8D0E /* ReusableCell.swift in Sources */,
+				675E5A162088EDD700F7C35B /* NSAppearanceExtension.swift in Sources */,
 				67351B87204D6EC600A42841 /* Reusable.swift in Sources */,
 				6711B5DF204EC6B30009CA8C /* ReusableStoryboard.swift in Sources */,
 				67E2867F205555CE002B9160 /* ReusableController.swift in Sources */,
