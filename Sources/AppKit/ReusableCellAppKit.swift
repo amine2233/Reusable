@@ -1,7 +1,8 @@
-import Foundation
-import Cocoa
+#if canImport(AppKit)
+import AppKit
 
-public protocol ReusableCell: Reusable { }
+#if !os(watchOS)
+public protocol ReusableCell: Reusable {}
 
 public extension ReusableCell {
     static var nib: NSNib? { return nil }
@@ -9,20 +10,23 @@ public extension ReusableCell {
 
 public extension NSTableView {
     public func registerReusableCell<T: NSTableCellView>(_: T.Type) where T: ReusableCell {
-        self.register(T.nib, forIdentifier: NSUserInterfaceItemIdentifier(rawValue: T.reuseIdentifier))
+        register(T.nib, forIdentifier: NSUserInterfaceItemIdentifier(rawValue: T.reuseIdentifier))
     }
 }
 
 public extension NSCollectionView {
     public func registerReusableCell<T: NSCollectionViewItem>(_: T.Type) where T: ReusableCell {
         if let nib = T.nib {
-            self.register(nib, forItemWithIdentifier: NSUserInterfaceItemIdentifier(rawValue: T.reuseIdentifier))
+            register(nib, forItemWithIdentifier: NSUserInterfaceItemIdentifier(rawValue: T.reuseIdentifier))
         } else {
-            self.register(T.self, forItemWithIdentifier: NSUserInterfaceItemIdentifier(rawValue: T.reuseIdentifier))
+            register(T.self, forItemWithIdentifier: NSUserInterfaceItemIdentifier(rawValue: T.reuseIdentifier))
         }
     }
 
     public func makeItemWithIdentifierReusableCell<T: NSCollectionViewItem>(_: T.Type, indexPath: IndexPath) -> T? where T: ReusableCell {
-        return self.makeItem(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: T.reuseIdentifier), for: indexPath) as? T
+        return makeItem(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: T.reuseIdentifier), for: indexPath) as? T
     }
 }
+#endif
+
+#endif

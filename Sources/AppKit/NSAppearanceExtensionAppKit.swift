@@ -1,12 +1,7 @@
-//
-//  UIAppearanceExtension.swift
-//  Reusable iOS
-//
-//  Created by Amine Bensalah on 19/04/2018.
-//
-
+#if canImport(AppKit)
 import AppKit
 
+#if !os(watchOS)
 extension NSAppearanceCustomization {
     @discardableResult
     public func style(_ styleClosure: (Self) -> Swift.Void) -> Self {
@@ -15,3 +10,6 @@ extension NSAppearanceCustomization {
     }
 }
 
+#endif
+
+#endif

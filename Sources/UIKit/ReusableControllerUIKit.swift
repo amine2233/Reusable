@@ -1,6 +1,7 @@
-import Foundation
+#if canImport(UIKit)
 import UIKit
 
+#if !os(watchOS)
 public protocol ReusableController: Reusable {
 }
 
@@ -12,3 +13,7 @@ extension ReusableController where Self: UIViewController {
         return T(nibName: nil, bundle: nibBundle)
     }
 }
+
+#endif
+
+#endif

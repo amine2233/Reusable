@@ -1,10 +1,10 @@
+#if canImport(Foundation)
 import Foundation
 
 public protocol UpdatableProtocol {
-    
     associatedtype ViewModel
     associatedtype Index
-    
+
     var viewModel: ViewModel? { get }
     var indexPath: Index? { get }
 }
@@ -19,3 +19,5 @@ public protocol UpdatableDelegate: UpdatableProtocol {
 
     func update(with viewModel: ViewModel?, at indexPath: Index?, delegate: Delegate?)
 }
+
+#endif

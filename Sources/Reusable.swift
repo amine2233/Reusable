@@ -1,3 +1,4 @@
+#if canImport(Foundation)
 import Foundation
 
 public protocol Reusable {
@@ -9,3 +10,5 @@ public extension Reusable {
         return String(describing: self)
     }
 }
+
+#endif
