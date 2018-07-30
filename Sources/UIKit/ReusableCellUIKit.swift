@@ -7,7 +7,9 @@ public protocol ReusableCell: Reusable {
 }
 
 public extension ReusableCell {
-    static var nib: UINib? { return nil }
+    static var nib: UINib? {
+        return UINib(nibName: Self.reuseIdentifier, bundle: nil)
+    }
 }
 
 public extension UITableView {
@@ -18,9 +20,9 @@ public extension UITableView {
             register(T.self, forCellReuseIdentifier: T.reuseIdentifier)
         }
     }
-
-    public func dequeueReusableCell<T: UITableViewCell>(for indexPath: IndexPath) -> T? where T: ReusableCell {
-        return dequeueReusableCell(withIdentifier: T.reuseIdentifier, for: indexPath) as? T
+    
+    public func dequeueReusableCell<T: UITableViewCell>(_: T.Type, for indexPath: IndexPath) -> T? where T: ReusableCell {
+        return self.dequeueReusableCell(withIdentifier: T.reuseIdentifier, for: indexPath) as? T
     }
 
     public func registerReusableHeaderFooterView<T: UITableViewHeaderFooterView>(_: T.Type) where T: ReusableCell {
@@ -30,9 +32,9 @@ public extension UITableView {
             register(T.self, forHeaderFooterViewReuseIdentifier: T.reuseIdentifier)
         }
     }
-
-    public func dequeueReusableHeaderFooterView<T: UITableViewHeaderFooterView>() -> T? where T: ReusableCell {
-        return dequeueReusableHeaderFooterView(withIdentifier: T.reuseIdentifier) as? T
+    
+    public func dequeueReusableHeaderFooterView<T: UITableViewHeaderFooterView>(_: T.Type) -> T? where T: ReusableCell {
+        return self.dequeueReusableHeaderFooterView(withIdentifier: T.reuseIdentifier) as? T
     }
 }
 
@@ -45,20 +47,20 @@ public extension UICollectionView {
         }
     }
 
-    public func dequeueReusableCell<T: UICollectionViewCell>(for indexPath: IndexPath) -> T? where T: ReusableCell {
-        return dequeueReusableCell(withReuseIdentifier: T.reuseIdentifier, for: indexPath) as? T
+    public func dequeueReusableCell<T: UICollectionViewCell>(_: T.Type,for indexPath: IndexPath) -> T? where T: ReusableCell {
+        return self.dequeueReusableCell(withReuseIdentifier: T.reuseIdentifier, for: indexPath) as? T
     }
-
-    public func registerReusableSupplementaryView<T: UICollectionReusableView>(elementKind: String, _: T.Type) where T: ReusableCell {
+    
+    public func registerReusableSupplementaryView<T: UICollectionReusableView>(_: T.Type, elementKind: String) where T: ReusableCell {
         if let nib = T.nib {
             register(nib, forSupplementaryViewOfKind: elementKind, withReuseIdentifier: T.reuseIdentifier)
         } else {
             register(T.self, forSupplementaryViewOfKind: elementKind, withReuseIdentifier: T.reuseIdentifier)
         }
     }
-
-    public func dequeueReusableSupplementaryView<T: UICollectionViewCell>(elementKind: String, indexPath: IndexPath) -> T? where T: ReusableCell {
-        return dequeueReusableSupplementaryView(ofKind: elementKind, withReuseIdentifier: T.reuseIdentifier, for: indexPath) as? T
+    
+    public func dequeueReusableSupplementaryView<T: UICollectionViewCell>(_: T.Type, elementKind: String, indexPath: IndexPath) -> T? where T: ReusableCell {
+        return self.dequeueReusableSupplementaryView(ofKind: elementKind, withReuseIdentifier: T.reuseIdentifier, for: indexPath) as? T
     }
 }
 

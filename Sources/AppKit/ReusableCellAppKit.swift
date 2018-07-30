@@ -5,7 +5,9 @@ import AppKit
 public protocol ReusableCell: Reusable {}
 
 public extension ReusableCell {
-    static var nib: NSNib? { return nil }
+    static var nib: NSNib? {
+        return NSNib(nibNamed: NSNib.Name(rawValue: Self.reuseIdentifier), bundle: nil)
+    }
 }
 
 public extension NSTableView {

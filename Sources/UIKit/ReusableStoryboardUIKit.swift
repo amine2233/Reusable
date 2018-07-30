@@ -32,9 +32,9 @@ public extension ReusableStoryboard {
     public static func initialViewController() -> UIViewController? {
         return storyboard().instantiateInitialViewController()
     }
-
-    public static func instantiateController<T: UIViewController>(type: T.Type) -> T? {
-        return storyboard().instantiateViewController(withIdentifier: String(describing: type)) as? T
+    
+    public static func instantiateController<T: UIViewController>(_: T.Type) -> T? {
+        return storyboard().instantiateViewController(withIdentifier: String(describing: T.self)) as? T
     }
 }
 
