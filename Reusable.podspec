@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 		s.name 				= "Reusable"
-		s.version 			= "1.3.0"
+		s.version 			= "1.4.0"
 		s.summary         	= "Sort description of 'Reusable' framework"
 	    s.homepage        	= "https://github.com/amine2233/Reusable"
 	    s.license           = { type: 'MIT', file: 'LICENSE' }

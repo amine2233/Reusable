@@ -24,7 +24,7 @@ import AppKit
 /// Reusable Storyboard Protocol for manage your storyboard file
 public protocol ReusableStoryboard: Reusable {}
 
-public extension ReusableStoryboard {
+extension ReusableStoryboard {
     public static func storyboard() -> NSStoryboard {
         return NSStoryboard(name: reuseIdentifier, bundle: nil)
     }
@@ -38,7 +38,7 @@ public extension ReusableStoryboard {
     }
 }
 
-public extension ReusableStoryboard where Self: RawRepresentable, Self.RawValue == String {
+extension ReusableStoryboard where Self: RawRepresentable, Self.RawValue == String {
     public func viewController() -> Any {
         return Self.storyboard().instantiateController(withIdentifier: rawValue)
     }

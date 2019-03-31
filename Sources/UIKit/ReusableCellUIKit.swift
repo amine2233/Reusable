@@ -6,13 +6,13 @@ public protocol ReusableCell: Reusable {
     static var nib: UINib? { get }
 }
 
-public extension ReusableCell {
-    static var nib: UINib? {
+extension ReusableCell {
+    public static var nib: UINib? {
         return UINib(nibName: Self.reuseIdentifier, bundle: nil)
     }
 }
 
-public extension UITableView {
+extension UITableView {
     public func registerReusableCell<T: UITableViewCell>(_: T.Type) where T: ReusableCell {
         if let _nib = T.nib {
             register(_nib, forCellReuseIdentifier: T.reuseIdentifier)
@@ -38,7 +38,7 @@ public extension UITableView {
     }
 }
 
-public extension UICollectionView {
+extension UICollectionView {
     public func registerReusableCell<T: UICollectionViewCell>(_: T.Type) where T: ReusableCell {
         if let nib = T.nib {
             register(nib, forCellWithReuseIdentifier: T.reuseIdentifier)

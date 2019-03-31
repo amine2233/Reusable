@@ -10,13 +10,13 @@ public extension ReusableCell {
     }
 }
 
-public extension NSTableView {
+extension NSTableView {
     public func registerReusableCell<T: NSTableCellView>(_: T.Type) where T: ReusableCell {
         register(T.nib, forIdentifier: NSUserInterfaceItemIdentifier(rawValue: T.reuseIdentifier))
     }
 }
 
-public extension NSCollectionView {
+extension NSCollectionView {
     public func registerReusableCell<T: NSCollectionViewItem>(_: T.Type) where T: ReusableCell {
         if let nib = T.nib {
             register(nib, forItemWithIdentifier: NSUserInterfaceItemIdentifier(rawValue: T.reuseIdentifier))
