@@ -15,6 +15,7 @@ public protocol Updatable: UpdatableProtocol {
 
 public protocol UpdatableDelegate: UpdatableProtocol {
     associatedtype Delegate
+    
     var delegate: Delegate? { get }
 
     func update(with viewModel: ViewModel?, at indexPath: Index?, delegate: Delegate?)

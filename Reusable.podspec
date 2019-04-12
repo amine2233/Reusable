@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 		s.name 				= "Reusable"
-		s.version 			= "1.4.0"
+		s.version 			= "2.0.0"
 		s.summary         	= "Sort description of 'Reusable' framework"
 	    s.homepage        	= "https://github.com/amine2233/Reusable"
 	    s.license           = { type: 'MIT', file: 'LICENSE' }
@@ -14,10 +14,10 @@ Pod::Spec.new do |s|
 	    s.source_files      = "Sources/**/*.swift"
 	    s.exclude_files		= 'LICENSE'
 	    s.pod_target_xcconfig = {
-    		'SWIFT_VERSION' => '4.2'
+    		'SWIFT_VERSION' => '5.0'
   		}
   		s.module_name = s.name
-  		s.swift_version = '4.2'
+  		s.swift_version = '5.0'
 
 		s.ios.exclude_files = "Sources/AppKit", "Sources/WatchKit"
   		s.tvos.exclude_files = "Sources/AppKit", "Sources/WatchKit"
