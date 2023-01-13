@@ -26,7 +26,7 @@ public protocol ReusableStoryboard: Reusable {}
 
 extension ReusableStoryboard {
     public static func storyboard() -> NSStoryboard {
-        return NSStoryboard(name: reuseIdentifier, bundle: nil)
+        return NSStoryboard(name: NSStoryboard.Name(reuseIdentifier), bundle: nil)
     }
 
     public static func initialViewController<T: NSViewController>() -> T? {
@@ -34,15 +34,14 @@ extension ReusableStoryboard {
     }
 
     public static func instantiateController<T: NSViewController>(type: T.Type) -> T? {
-        return storyboard().instantiateController(withIdentifier: String(describing: type)) as? T
+        return storyboard().instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(String(describing: type))) as? T
     }
 }
 
 extension ReusableStoryboard where Self: RawRepresentable, Self.RawValue == String {
     public func viewController() -> Any {
-        return Self.storyboard().instantiateController(withIdentifier: rawValue)
+        return Self.storyboard().instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(rawValue))
     }
-
     public static func viewController(identifier: Self) -> Any {
         return identifier.viewController()
     }
@@ -52,7 +51,7 @@ protocol ReusableStoryboardSegueType: RawRepresentable {}
 
 extension NSViewController {
     func performSegue<S: ReusableStoryboardSegueType>(segue: S, sender: Any? = nil) where S.RawValue == String {
-        performSegue(withIdentifier: segue.rawValue, sender: sender)
+        performSegue(withIdentifier: NSStoryboard.SegueIdentifier(segue.rawValue), sender: sender)
     }
 }
 

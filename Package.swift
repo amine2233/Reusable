@@ -20,5 +20,8 @@ let package = Package(
         .target(
             name: "Reusable",
             dependencies: []),
+        .testTarget(
+            name: "ReusableTests",
+            dependencies: ["Reusable"]),
     ]
 )

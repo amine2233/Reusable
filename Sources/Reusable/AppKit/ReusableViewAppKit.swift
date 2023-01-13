@@ -6,7 +6,7 @@ public protocol ReusableView: Reusable {}
 
 extension ReusableView {
     public static var nib: NSNib? {
-        return NSNib(nibNamed: Self.reuseIdentifier, bundle: nil)
+        return NSNib(nibNamed: NSNib.Name(Self.reuseIdentifier), bundle: nil)
     }
 }
 
